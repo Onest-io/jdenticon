@@ -449,15 +449,15 @@
             // Available colors for this icon
             availableColors = [
                 // Dark gray
-                Color.rgb(76, 76, 76),
+                Color.rgb(136, 136, 136),
                 // Mid color
-                Color.correctedHsl(hue, 0.5, 0.6),
+                Color.correctedHsl(hue, 0.5, 0.7),
                 // Light gray
                 Color.rgb(230, 230, 230),
                 // Light color
-                Color.correctedHsl(hue, 0.5, 0.8),
+                Color.correctedHsl(hue, 0.5, 0.9),
                 // Dark color
-                Color.hsl(hue, 0.5, 0.4)
+                Color.hsl(hue, 0.5, 0.5)
             ],
 
             // The index of the selected colors
