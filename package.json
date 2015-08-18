@@ -1,13 +1,13 @@
 {
   "name": "jdenticon",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "description": "Javascript identicon generator",
-  "main": "dist/jdenticon.js",
+  "main": "jdenticon.js",
   "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmester/jdenticon"
+    "url": "https://github.com/cryptonomex/jdenticon"
   },
   "bugs": {
     "url": "https://github.com/dmester/jdenticon/issues"
