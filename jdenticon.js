@@ -504,6 +504,16 @@
     /**
      * Updates all canvas elements with the data-jdenticon-hash attribute.
      */
+    function updateById(id) {
+        var hash,
+            canvas = document.getElementById(id);
+        hash = canvas.getAttribute(HASH_ATTRIBUTE);
+
+        if (hash) {
+            update(canvas, hash, 0);
+        }
+    }
+
     function jdenticon() {
         var hash, 
             canvases = "document" in global ? document.getElementsByTagName("canvas") : [];
@@ -511,13 +521,14 @@
         for (var i = 0; i < canvases.length; i++) {
             hash = canvases[i].getAttribute(HASH_ATTRIBUTE);
             if (hash) {
-                update(canvases[i], hash);
+                update(canvases[i], hash, 0);
             }
         }
     }
     jdenticon["drawIcon"] = drawIcon;
     jdenticon["update"] = update;
     jdenticon["version"] = version;
+    jdenticon["updateById"] = updateById;
     
     // Basic jQuery plugin
     if (jQuery) {
